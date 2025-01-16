@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リアルタイムデータ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        canvas {
+            max-width: 100%;
+            height: 400px;
+        }
+        #dataList {
+            margin-top: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>リアルタイムデータグラフとリスト</h1>
+    <canvas id="realtimeChart"></canvas>
+    <div id="dataList">
+        <h2>データ一覧</h2>
+        <ul id="dataItems"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <!-- 外部JSファイルを読み込む -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
