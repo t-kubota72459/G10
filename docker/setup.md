@@ -87,3 +87,4 @@ docker start fa-system
 
   * 実行コマンドに含まれる `-v ./node-red-data:/data` オプションにより、作業フォルダ内に自動的に `node-red-data` というフォルダが作成されます。
   * 皆さんが作成したフローや設定はここに保存されるため、Docker を停止してもデータは消えません。
+
